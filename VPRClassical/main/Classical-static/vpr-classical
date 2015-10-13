@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vermont Public Radio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        font-family: Helvetica;
+    }
+
+    h2 {
+        font-size: 0.95em;
+        font-weight: 300;
+        margin: 15px 0 10px;
+        text-decoration: underline;
+    }
+
+    h4 {
+        font-weight: 600;
+        margin: 0px 0 5px;
+    }
+
+    h5 {
+        font-weight: 500;
+        margin: 0px 0 5px;
+    }
+
+
+    p {
+        margin: 0px 0 10px;
+        font-weight: 200;
+    }
+
+    p.calendar-link {
+        margin: 35px 0 0px;
+        font-weight: 300;
+    }
+
+    p.info {
+        font-weight: 600;
+    }
+
+    #up-next {
+        margin: 30px 0 0px;
+        font-size: 0.80em;
+    }
+
+    #song {
+        margin: 25px 0 0px;
+        font-size: 0.95em;
+    }
+
+    #error {
+        width:100%;
+        margin:0 auto;
+        padding-top:10%;
+        font-size:18px;
+        color: rgb(132, 0, 30);
+    }
+
+    #program {
+      font-size: 0.90em;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<div id="playing-now"></div>
+  <div id="error">
+    <p id="errorText"></p>
+  </div>
+<script src="/sandbox/now-playing/static/js/nowScript.min.js?ver=1.1"></script>
+
+</body>
+</html>

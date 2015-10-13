@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>VPR News Playlist Calendar | VPR Classical</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Looking for a piece you heard on VPR News today, yesterday or last month? Find it here!">
+
+    <!-- Styles -->
+
+    <link href="/apps/now-playing/static/css/style.css?ver=1.0" rel="stylesheet">
+
+
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="/apps/now-playing/static/ico/favicon.ico">
+
+    
+    <meta property="og:description" content="Looking for a piece you heard on VPR News today, yesterday or last month? Find it here!" />
+    <meta property="fb:admins" content="5735853" />
+    <meta property="og:title" content="VPR News Playlist Calendar" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://mediad.publicbroadcasting.net/p/vpr/files/styles/placed_wide/public/201407/vpr-classical-hosts.jpg" />
+    <meta property="og:url" content="http://www.vpr.net/apps/now-playing/vpr-news-calendar" />
+    <meta property="og:site_name" content="Vermont Public Radio" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@vprnet">
+    <meta name="twitter:title" content="VPR News Playlist Calendar">
+    <meta name="twitter:description" content="Looking for a piece you heard on VPR News today, yesterday or last month? Find it here!">
+    <meta name="twitter:creator" content="@vprnet">
+    <meta name="twitter:image:src" content="http://mediad.publicbroadcasting.net/p/vpr/files/styles/placed_wide/public/201407/vpr-classical-hosts.jpg">
+    
+<script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') + 
+    '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+<script type='text/javascript'>
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/6634685/VPR-Sitewide-MarComDev-300x250', [300, 250], 'div-gpt-ad-1395772091510-0').addService(googletag.pubads());
+    googletag.defineSlot('/6634685/VPR-Sitewide-UW-1-300x250', [300, 250], 'div-gpt-ad-1395762670111-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+    });
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<!-- Jquery used by below anayltics code -->
+    <!-- Analytics script -->
+    <script type="text/javascript">(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = '//stream.publicbroadcasting.net/analytics/aayb.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script>
+
+</head>
+
+<body>
+
+<div id="page_container">
+<nav class="navbar" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <div id="vpr_logo">
+                <a class="navbar-brand" href="http://www.vpr.net"><div id="vpr_svg"></div></a>
+            </div>
+            <h1 id="navbar-title"><a href="/apps/now-playing/vpr-news-calendar">VPR News Playlist Calendar</a></h1>
+            
+            <ul class="list-inline" id="social-logos">
+                <li><a href="https://www.facebook.com/sharer.php?u=http%3A//www.vpr.net/apps/now-playing/vpr-news-calendar" target="_blank"><i class="icon ion-social-facebook"></i></a></li>
+                <li><a href="http://www.twitter.com/intent/tweet?url=http%3A//www.vpr.net/apps/now-playing/vpr-news-calendar&text=Looking%20for%20something%20you%20heard%20on%20VPR%20News%3F%20Try%20our%20playlist%20calendar%21&via=vprnet&hashtags=News" target="_blank"><i class="icon ion-social-twitter"></i></a></li>
+                <li><a href="https://plus.google.com/share?url=http%3A//www.vpr.net/apps/now-playing/vpr-news-calendar" target="_blank"><i class="icon ion-social-googleplus"></i></a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+<!-- !!!!! -->
+    <div id="error">
+        <p id="errorText"></p>
+    </div>
+<!-- !!!!! -->
+
+<div class="container">
+    <div class="col-sm-7">
+        <div class="control-center">
+            <div class="pick row">
+                <p class="input-help-text">Looking for something you heard recently?</p>
+                <input type="text" id="datepicker" placeholder="Pick a date">
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p><i class="icon ion-headphone"></i> <a id="audio-player" href="http://www.vpr.net/apps/audio-player/">Launch Audio Player</a></p>
+                </div>
+                <div class="col-sm-6">
+                    <p><i class="icon ion-home"></i> <a href="http://digital.vpr.net/programs/vpr-news">VPR News Homepage</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="calendar"></div>
+    </div>
+    <div class="col-sm-5">
+        <div id="underwriter">
+    <div id="uw_container">
+        <div id='div-gpt-ad-1395762670111-0' style='width:300px; height:250px;'>
+        <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1395762670111-0'); });
+        </script>
+        </div>
+        <p><a href="http://www.vpr.net/apps/support/directory">Find an Underwriter</a> &mdash; <a href="http://www.vpr.net/apps/support/underwriter">Become an Underwriter</a></p>
+    </div>
+</div>
+        <div id="marcomm">
+    <div id='div-gpt-ad-1395772091510-0' style='width:300px; height:250px;'>
+        <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1395772091510-0'); });
+        </script>
+    </div>
+</div>
+    </div>
+</div>
+
+</div>
+
+
+<footer>
+    <div class="container">
+        <p><span class="hidden-xs" id="vpr_address">Vermont Public Radio // 365 Troy Avenue // Colchester, VT 05446 // (802) 655-9451</span> <span id="copyright">&copy; Vermont Public Radio 2014</span></p>
+    </div>
+</footer>
+
+
+
+
+<script src="/apps/now-playing/static/js/calendarScript.min.js?ver=1.0"></script>
+
+
+
+
+
+</body>
+</html>
